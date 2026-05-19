@@ -6,22 +6,31 @@ import com.almasb.fxgl.dsl.FXGL;
 import static com.almasb.fxgl.dsl.FXGL.getInput;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.input.Input;
-import com.almasb.fxgl.physics.CollisionHandler;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 
 /**
  * JavaFX App
  */
 public class App extends GameApplication {
+
     @Override
-    protected void initSettings(GameSettings setting){
-        setting.setTitle("Mein erstes Game mit FXGL"); 
+    protected void initSettings(GameSettings setting) {
+        setting.setTitle("Mein erstes Game mit FXGL");
         setting.setFullScreenFromStart(true);
         setting.setVersion("0.0.1");
     }
+
+    ; 
+    
     @Override
-    protected void initGame(){
+    protected void initGame() {
         Entity player = FXGL.entityBuilder()
-                .type(t); 
+                .view(new Rectangle(100, 100, Color.RED))
+                .buildAndAttach();
+    }
+    protected void initInput(){
+        Input input = getInput(); 
     }
 
     public static void main(String[] args) {
