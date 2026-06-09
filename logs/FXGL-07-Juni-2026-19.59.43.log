@@ -1,0 +1,809 @@
+19:59:20.270 [main                     ] DEBUG Logger               - Configured Logger
+19:59:20.278 [main                     ] DEBUG GameApplication      - Logging settings
+Title: Mein erstes Game mit FXGL
+Version: 0.0.1
+Width: 1280
+Height: 880
+Fullscreen: true
+Intro: false
+Profiling: false
+Single step:false
+App Mode: DEVELOPER
+Menu Key: ESCAPE
+Stage Style: DECORATED
+Scene Factory: class com.almasb.fxgl.app.scene.SceneFactory
+
+19:59:20.744 [JavaFX Application Thread] DEBUG FXGLApplication      - Initializing FXGL
+19:59:20.748 [JavaFX Application Thread] INFO  Engine               - FXGL-25 (05.02.2026 22.57) on WINDOWS (J:25.0.2 FX:25.0.1)
+19:59:20.748 [JavaFX Application Thread] DEBUG Engine               - JRE Vendor Name: Eclipse Adoptium
+19:59:20.748 [JavaFX Application Thread] DEBUG Engine               - Running on OS: Windows 10 version 10.0
+19:59:20.749 [JavaFX Application Thread] DEBUG Engine               - Architecture: amd64
+19:59:20.749 [JavaFX Application Thread] INFO  Engine               - Source code and latest versions at: https://github.com/AlmasB/FXGL
+19:59:20.749 [JavaFX Application Thread] INFO  Engine               -       Ask questions and discuss at: https://github.com/AlmasB/FXGL/discussions
+19:59:20.863 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Creating a JavaFX scene
+19:59:20.913 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Target settings size: 1280.0 x 880.0
+19:59:20.913 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled scene size:    1280.0 x 880.0
+19:59:20.913 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+19:59:20.914 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Set initial scene to FXGLStartupScene
+19:59:20.919 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Opening main window
+19:59:21.254 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Window border size: (16.0, 39.0)
+19:59:21.254 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled size: 1280.0 x 880.0
+19:59:21.254 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+19:59:21.254 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scene size: 1280.0 x 880.0
+19:59:21.254 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Stage size: 1296.0 x 919.0
+19:59:21.261 [FXGL Background Thread 1 ] DEBUG Engine               - Initializing environment variables
+19:59:21.338 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - User app class for loading assets: class btaahaus.ahrfxglgame.App
+19:59:21.338 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Applying CSS: fxgl_dark.css
+19:59:21.340 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/css/fxgl_dark.css
+19:59:21.383 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Initializing application scenes
+19:59:21.453 [FXGL Background Thread 1 ] DEBUG GameWorld            - Game world initialized
+19:59:21.503 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Physics world initialized: appHeight=880, physics.ppm=50,0
+19:59:21.504 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Using strategy: BRUTE_FORCE
+19:59:21.510 [FXGL Background Thread 1 ] DEBUG GameScene            - Game scene initialized: 1280x880
+19:59:21.525 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createMenuBodyGameMenu()
+19:59:21.543 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createOptionsMenu()
+19:59:21.553 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/textures/particles/smoke.png
+19:59:21.635 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/textures/particles/trace_horizontal.png
+19:59:21.654 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Application scenes initialized
+19:59:21.666 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Loading FXGL system data
+19:59:21.669 [FXGL Background Thread 1 ] DEBUG FileSystemAccess     - Reading from: C:\Users\administrator\Documents\NetBeansProjekte\ahrFXGLGame\system\fxgl.bundle
+19:59:21.675 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Bundle FXGL: {}
+19:59:21.676 [FXGL Background Thread 1 ] DEBUG UpdaterService       - Checking for updates
+19:59:21.680 [FXGL Background Thread 1 ] DEBUG FXGLApplication      - Loading default localization
+19:59:21.681 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/languages/english.lang
+19:59:21.682 [FXGL Background Thread 4 ] DEBUG FXGLApplication      - Loading fonts
+19:59:21.683 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/fonts/VarelaRound-Regular.ttf
+19:59:21.702 [FXGL Background Thread 1 ] INFO  FXGLApplication      - FXGL initialization took: 0,440 sec
+19:59:21.712 [JavaFX Application Thread] DEBUG Input                - Registered new binding: right - D
+19:59:21.713 [JavaFX Application Thread] DEBUG Input                - Registered new binding: left - A
+19:59:21.713 [JavaFX Application Thread] DEBUG Input                - Registered new binding: up - W
+19:59:21.713 [JavaFX Application Thread] DEBUG Input                - Registered new binding: down - S
+19:59:21.713 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/fonts/Abel-Regular.ttf
+19:59:21.713 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/textures/fxgl_icon.png
+19:59:21.715 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/fonts/TerminalLandMono-Regular.otf
+19:59:21.718 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/fonts/Courier-Prime.ttf
+19:59:21.733 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Administrator.Rechner09/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/textures/fxgl_default_cursor.png
+19:59:21.735 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - CTRL+8
+19:59:21.736 [JavaFX Application Thread] DEBUG Input                - Registered new binding: System info dump - CTRL+9
+19:59:21.736 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Restart - CTRL+R
+19:59:21.737 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Toggle Debug Camera - CTRL+7
+19:59:21.739 [JavaFX Application Thread] DEBUG LoopRunner           - Starting loop
+19:59:21.739 [JavaFX Application Thread] DEBUG LoopRunner           - Initializing JavaFX AnimationTimerLoop
+19:59:21.742 [JavaFX Application Thread] DEBUG GameApplicationServi - Starting new game
+19:59:21.742 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+19:59:21.751 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLStartupScene and adding to FXGLLoadingScene
+19:59:21.751 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLStartupScene -> FXGLLoadingScene
+19:59:21.751 [JavaFX Application Thread] DEBUG GameApplicationServi - Clearing previous game
+19:59:21.751 [JavaFX Application Thread] DEBUG GameScene            - Clearing game scene
+19:59:21.751 [JavaFX Application Thread] DEBUG GameWorld            - Clearing game world
+19:59:21.751 [JavaFX Application Thread] DEBUG PhysicsWorld         - Clearing physics world
+19:59:21.753 [FXGL Background Thread 4 ] DEBUG FXGLApplication      - Initializing game
+19:59:21.759 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/rocketSchmal.png
+19:59:21.766 [JavaFX Application Thread] DEBUG FXGLApplication      - Registering font factories with UI factory
+19:59:21.771 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/bgSpace.jpg
+19:59:21.945 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/meteorit.png
+19:59:22.011 [FXGL Background Thread 4 ] INFO  FXGLApplication      - Game initialization took: 0,257 sec
+19:59:22.021 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+19:59:22.029 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLLoadingScene and adding to GameScene
+19:59:22.029 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLLoadingScene -> GameScene
+19:59:22.045 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.123 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.177 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.219 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.260 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.307 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.342 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.377 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.414 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.451 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.488 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.527 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.564 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.602 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.641 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.689 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.726 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.762 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.797 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.833 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.870 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.907 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.942 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:22.978 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.014 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.058 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.091 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.126 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.161 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.195 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.233 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.269 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.304 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.339 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.375 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.411 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.459 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.494 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.528 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.563 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.597 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.633 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.672 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.706 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.740 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.775 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.811 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.847 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.886 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.922 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.957 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:23.990 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.025 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.059 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.098 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.135 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.169 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.205 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.242 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.279 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.315 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.350 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.389 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.423 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.459 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.494 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.530 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.566 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.601 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.634 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.674 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.679 [FXGL Background Thread 3 ] DEBUG Engine               - Logging environment variables
+19:59:24.679 [FXGL Background Thread 3 ] DEBUG Engine               - achievements: []
+19:59:24.679 [FXGL Background Thread 3 ] DEBUG Engine               - actualHeight: 880.0
+19:59:24.679 [FXGL Background Thread 3 ] DEBUG Engine               - actualHeightProperty: ReadOnlyDoubleProperty [value: 880.0]
+19:59:24.679 [FXGL Background Thread 3 ] DEBUG Engine               - actualWidth: 1280.0
+19:59:24.679 [FXGL Background Thread 3 ] DEBUG Engine               - actualWidthProperty: ReadOnlyDoubleProperty [value: 1280.0]
+19:59:24.679 [FXGL Background Thread 3 ] DEBUG Engine               - appIcon: fxgl_icon.png
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - applicationMode: DEVELOPER
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - cSSList: [fxgl_dark.css]
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - collisionDetectionStrategy: BRUTE_FORCE
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - configClass: Optional.empty
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - credits: []
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - defaultCursor: CursorInfo(imageName=fxgl_default_cursor.png, hotspotX=7.0, hotspotY=6.0)
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - devBBoxColorProperty: ObjectProperty [value: 0xff0000ff]
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - devEnableDebugCameraProperty: BooleanProperty [value: false]
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - devSensorColorProperty: ObjectProperty [value: 0xffff00ff]
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - devShowBBoxProperty: BooleanProperty [value: false]
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - devShowPositionProperty: BooleanProperty [value: false]
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - enabledMenuItems: []
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - engineServices: [class com.almasb.fxgl.app.services.FXGLAssetLoaderService, class com.almasb.fxgl.app.FXGLApplication$GameApplicationService, class com.almasb.fxgl.app.services.FXGLDialogService, class com.almasb.fxgl.app.services.IOTaskExecutorService, class com.almasb.fxgl.io.FileSystemService, class com.almasb.fxgl.localization.LocalizationService, class com.almasb.fxgl.app.services.SystemBundleService, class com.almasb.fxgl.profile.SaveLoadService, class com.almasb.fxgl.ui.FXGLUIFactoryServiceProvider, class com.almasb.fxgl.ui.FXGLDialogFactoryServiceProvider, class com.almasb.fxgl.audio.AudioPlayer, class com.almasb.fxgl.notification.impl.NotificationServiceProvider, class com.almasb.fxgl.achievement.AchievementService, class com.almasb.fxgl.cutscene.CutsceneService, class com.almasb.fxgl.minigames.MiniGameService, class com.almasb.fxgl.net.NetService, class com.almasb.fxgl.app.services.UpdaterService, class com.almasb.fxgl.dev.DevService]
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - fontGame: Abel-Regular.ttf
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - fontMono: TerminalLandMono-Regular.otf
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - fontSizeScaleUI: 1.0
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - fontText: Courier-Prime.ttf
+19:59:24.680 [FXGL Background Thread 3 ] DEBUG Engine               - fontUI: VarelaRound-Regular.ttf
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - fpsRefreshRate: 500.0 ms
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - fullScreen: BooleanProperty [value: false]
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - gameDifficulty: MEDIUM
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - gameDifficultyProperty: ObjectProperty [value: MEDIUM]
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - globalMusicVolume: 0.5
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - globalMusicVolumeProperty: DoubleProperty [value: 0.5]
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - globalSoundVolume: 0.5
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - globalSoundVolumeProperty: DoubleProperty [value: 0.5]
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - height: 880
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - is3D: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isAndroid: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isBrowser: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isClickFeedbackEnabled: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isCloseConfirmation: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isDesktop: true
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isDeveloperMenuEnabled: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isEmbedded: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isEntityPreloadEnabled: true
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isExperimentalTiledLargeMap: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isFileSystemWriteAllowed: true
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isFullScreenAllowed: true
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isFullScreenFromStart: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isGameMenuEnabled: true
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isIOS: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isIntroEnabled: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isLinux: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isMac: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isMainMenuEnabled: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isManualResizeEnabled: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isMobile: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isNative: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isPauseMusicWhenMinimized: true
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isPreserveResizeRatio: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isProfilingEnabled: false
+19:59:24.681 [FXGL Background Thread 3 ] DEBUG Engine               - isScaleAffectedOnResize: true
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - isSingleStep: false
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - isUserProfileEnabled: false
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - isWindows: true
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - language: ObjectProperty [value: ENGLISH]
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - menuKey: ESCAPE
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - mouseSensitivity: 0.2
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - notificationViewClass: class com.almasb.fxgl.notification.view.XboxNotificationView
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - pixelsPerMeter: 50.0
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - platform: WINDOWS
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - prefHeightProperty: ReadOnlyDoubleProperty [value: 880.0]
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - prefWidthProperty: ReadOnlyDoubleProperty [value: 1280.0]
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - profileDir: profiles/
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - profileName: StringProperty [value: DEFAULT]
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - randomSeed: -1
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - runtimeInfo: RuntimeInfo(platform=WINDOWS, version=25, build=05.02.2026 22.57)
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - saveFileExt: sav
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - scaledHeightProp$fxgl: DoubleProperty [bound, value: 880.0]
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - scaledWidthProp$fxgl: DoubleProperty [bound, value: 1280.0]
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - sceneFactory: com.almasb.fxgl.app.scene.SceneFactory@2cebcea3
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - secondsIn24h: 60
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuBack: menu/back.wav
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuPress: menu/press.wav
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuSelect: menu/select.wav
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - soundNotification: core/notification.wav
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - stageStyle: DECORATED
+19:59:24.682 [FXGL Background Thread 3 ] DEBUG Engine               - supportedLanguages: [ENGLISH, FRENCH, GERMAN, HUNGARIAN, RUSSIAN]
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - ticksPerSecond: -1
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - title: Mein erstes Game mit FXGL
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - urlGithub: https://github.com/AlmasB/FXGL
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - urlLeaderboard: http://fxgl-top.herokuapp.com/
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - urlPOM: https://raw.githubusercontent.com/AlmasB/FXGL/release/README.md
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - userAppClass: class btaahaus.ahrfxglgame.App
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - version: 0.0.1
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - versionCheckDays: 7
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - width: 1280
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - Logging services
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.FXGLAssetLoaderService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.FXGLApplication$GameApplicationService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.FXGLDialogService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.IOTaskExecutorService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.io.FileSystemService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.localization.LocalizationService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.SystemBundleService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.profile.SaveLoadService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.ui.FXGLUIFactoryServiceProvider
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.ui.FXGLDialogFactoryServiceProvider
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.audio.AudioPlayer
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.notification.impl.NotificationServiceProvider
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.achievement.AchievementService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.cutscene.CutsceneService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.minigames.MiniGameService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.net.NetService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.UpdaterService
+19:59:24.683 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.dev.DevService
+19:59:24.711 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.745 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.779 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.815 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.851 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.887 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.920 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.959 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:24.996 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.031 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.065 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.101 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.137 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.172 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.206 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.259 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.295 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.330 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.370 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.405 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.444 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.478 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.516 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.551 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.589 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.638 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.672 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.708 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.745 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.781 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.815 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.851 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.888 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.923 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:25.960 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.001 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.039 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.075 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.109 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.143 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.177 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.210 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.251 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.286 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.324 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.364 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.401 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.438 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.474 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.509 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.547 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.582 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.618 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.652 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.692 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.728 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.765 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.803 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.840 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.877 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.916 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.952 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:26.988 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.030 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.065 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.099 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.135 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.169 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.202 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.238 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.273 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.310 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.351 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.390 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.426 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.461 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.496 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.532 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.569 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.602 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.639 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.676 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.709 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.744 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.782 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.816 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.853 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.888 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.922 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.958 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:27.999 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.035 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.068 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.104 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.139 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.174 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.210 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.244 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.279 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.316 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.350 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.387 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.428 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.464 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.499 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.534 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.568 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.603 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.641 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.677 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.710 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.744 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.779 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.816 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.849 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.885 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.918 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.957 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:28.990 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.026 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.061 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.096 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.131 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.166 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.201 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.235 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.273 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.307 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.341 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.375 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.416 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.449 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.482 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.517 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.552 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.590 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.626 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.659 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.694 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.729 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.762 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.797 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.831 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.866 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.905 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.937 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:29.972 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.006 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.040 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.074 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.109 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.144 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.177 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.217 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.251 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.285 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.320 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.354 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.390 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.425 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.459 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.493 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.531 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.565 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.600 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.648 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.682 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.718 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.754 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.790 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.827 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.867 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.902 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.939 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:30.977 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.011 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.046 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.081 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.118 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.154 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.193 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.227 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.261 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.295 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.328 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.363 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.396 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.431 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.467 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.504 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.537 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.569 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.602 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.635 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.668 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.703 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.736 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.770 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.808 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.843 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.878 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.912 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.947 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:31.981 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.014 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.049 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.081 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.123 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.155 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.189 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.224 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.258 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.293 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.327 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.362 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.394 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.432 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.469 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.502 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.536 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.571 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.605 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.641 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.675 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.710 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.749 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.782 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.818 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.852 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.886 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.921 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.952 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:32.988 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.023 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.062 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.096 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.130 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.163 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.198 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.233 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.267 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.301 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.337 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.376 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.412 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.448 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.482 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.515 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.549 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.595 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.630 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.664 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.702 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.735 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.771 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.806 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.838 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.873 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.910 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.946 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:33.981 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.020 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.054 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.091 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.125 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.159 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.193 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.227 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.260 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.295 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.333 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.367 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.401 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.435 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.472 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.508 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.545 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.582 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.617 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.655 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.689 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.723 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.757 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.790 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.823 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.856 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.890 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.923 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.959 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:34.992 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.028 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.064 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.099 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.135 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.170 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.206 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.245 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.281 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.317 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.350 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.385 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.421 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.455 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.490 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.528 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.563 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.597 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.631 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.665 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.697 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.731 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.783 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.821 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.855 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.890 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.923 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.958 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:35.989 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.022 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.056 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.093 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.126 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.161 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.194 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.230 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.264 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.300 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.334 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.372 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.407 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.442 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.476 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.511 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.555 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.591 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.625 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.664 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.701 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.734 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.770 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.806 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.842 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.881 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.918 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.957 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:36.990 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.025 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.060 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.095 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.129 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.163 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.196 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.238 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.273 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.310 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.345 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.381 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.416 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.453 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.486 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.525 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.560 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.593 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.627 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.660 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.693 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.725 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.761 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.799 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.834 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.868 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.903 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.936 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:37.970 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.006 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.038 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.076 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.109 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.143 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.178 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.212 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.246 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.278 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.313 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.351 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.385 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.418 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.453 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.487 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.521 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.554 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.588 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.627 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.661 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.693 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.726 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.763 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.799 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.832 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.866 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.904 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.937 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:38.971 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.006 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.040 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.073 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.108 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.141 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.180 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.216 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.251 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.284 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.318 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.350 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.386 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.419 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.457 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.492 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.527 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.561 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.596 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.631 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.665 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.700 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.737 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.771 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.807 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.842 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.877 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.912 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.949 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:39.985 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.025 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.061 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.098 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.135 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.173 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.208 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.246 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.280 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.320 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.358 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.395 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.429 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.465 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.501 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.536 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.571 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.620 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.655 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.692 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.728 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.763 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.798 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.832 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.864 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.901 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.936 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:40.971 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.004 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.039 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.073 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.110 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.146 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.185 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.220 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.257 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.292 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.328 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.361 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.398 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.435 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.473 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.509 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.543 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.577 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.611 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.647 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.683 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.717 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.754 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.788 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.824 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.858 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.890 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.922 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.958 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:41.991 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.028 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.065 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.101 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.136 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.171 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.206 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.240 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.274 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.312 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.348 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.381 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.416 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.452 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.486 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.521 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.555 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.593 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.627 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.662 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.696 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.731 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.767 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.803 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.839 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.874 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.909 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.943 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:42.977 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.009 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.045 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.079 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.117 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.152 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.188 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.222 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.255 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.289 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.321 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.358 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.394 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.432 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/administrator/Documents/NetBeansProjekte/ahrFXGLGame/target/classes/assets/textures/fireBallSenkrecht.png
+19:59:43.538 [JavaFX Application Thread] DEBUG FXGLApplication      - Exiting FXGL
+19:59:43.538 [JavaFX Application Thread] DEBUG LoopRunner           - Stopping loop
+19:59:43.539 [JavaFX Application Thread] DEBUG SystemBundleService  - Saving FXGL system data
+19:59:43.540 [JavaFX Application Thread] DEBUG FileSystemAccess     - Writing to: C:\Users\administrator\Documents\NetBeansProjekte\ahrFXGLGame\system\fxgl.bundle
+19:59:43.542 [JavaFX Application Thread] DEBUG Async                - Shutting down background threads
+19:59:43.542 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Closing main window
+19:59:43.548 [JavaFX Application Thread] DEBUG Logger               - Closing Logger

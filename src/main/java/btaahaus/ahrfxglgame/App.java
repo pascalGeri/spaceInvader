@@ -10,6 +10,8 @@ import com.almasb.fxgl.input.Input;
 import com.almasb.fxgl.input.UserAction;
 import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.texture.Texture;
+import java.util.List;
+import java.util.Map;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Screen;
@@ -18,8 +20,10 @@ import javafx.stage.Screen;
  * JavaFX App
  */
 public class App extends GameApplication {
-
+    int screenX; 
+    int screenY; 
     Entity player;
+    int fireBalltimer = 0;
 
     @Override
     protected void initSettings(GameSettings setting) {
@@ -33,25 +37,27 @@ public class App extends GameApplication {
 
     @Override
     protected void initGame() {
-        int screenX = FXGL.getAppWidth();
-        int screenY = FXGL.getAppHeight();
-        Texture rocket = FXGL.texture("rocket.png", 50, 100);
+        screenX = FXGL.getAppWidth();
+        screenY = FXGL.getAppHeight();
+        FactoryController factoryController = new FactoryController();
         Texture background = FXGL.texture("bgSpace.jpg", screenX, screenY);
+
+        Texture rocket = FXGL.texture("rocketSchmal.png", 50, 100);
         //rocket.setScaleX(0.15);
         //rocket.setScaleY(0.15); Die Skalierung verändert nur die Darstellung des Bildes und nicht die wirkliche Größe
         Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
         System.out.println(screenBounds.toString()); //DAs ist der Ausdruck: Rectangle2D [minX=0.0, minY=0.0, maxX=1920.0, maxY=1040.0, width=1920.0, height=1040.0]
         FXGL.entityBuilder()
-                .at(0,0)
+                .at(0, 0)
                 .view(background)
                 .zIndex(-100)
-                .buildAndAttach(); 
+                .buildAndAttach();
         createObstacles(); //Erzeugen der Hindernisse
         player = FXGL.entityBuilder() //Der Spieler wird erstellt
                 .at(screenX / 2 - rocket.getWidth() / 2, screenY / 2)
                 .viewWithBBox(rocket)
                 .type(gameEntitys.PLAYER)
-                .with(new JumperComponent(), new CollidableComponent(true))
+                .with(new MovingComponent(10), new CollidableComponent(true))
                 .buildAndAttach();
     }
 
@@ -61,39 +67,54 @@ public class App extends GameApplication {
         input.addAction(new UserAction("right") {
             @Override
             protected void onAction() {
-                player.getComponent(JumperComponent.class).right();
+                player.getComponent(MovingComponent.class).right();
             }
         }, KeyCode.D);
         input.addAction(new UserAction("left") {
             @Override
             protected void onAction() {
-                player.getComponent(JumperComponent.class).left();
+                player.getComponent(MovingComponent.class).left();
             }
         }, KeyCode.A);
         input.addAction(new UserAction("up") {
             @Override
             protected void onAction() {
-                player.getComponent(JumperComponent.class).up();
+                player.getComponent(MovingComponent.class).up();
             }
          ; 
         }, KeyCode.W);
         input.addAction(new UserAction("down") {
             @Override
             protected void onAction() {
-                player.getComponent(JumperComponent.class).down();
+                player.getComponent(MovingComponent.class).down();
             }
         }, KeyCode.S);
     }
 
-    protected void onUpdate() {
-
+    @Override
+    protected void onUpdate(double tpf) {
+        int lives = FXGL.getWorldProperties().getInt("lives"); 
+        int leben = FXGL.getWorldProperties().getInt("speedOfPlayer");
+             
+        List<Entity> listOfFireballs = FXGL.getGameWorld().getEntitiesByType(gameEntitys.FIREBALL); 
+        fireBalltimer++;
+        if (fireBalltimer > tpf*2000) {
+            FXGL.getGameWorld().spawn("fireBall");
+            fireBalltimer = 0;
+        }
+        for(Entity fireball : listOfFireballs){
+            if(fireball.getY() < screenY){
+            fireball.getComponent(FireBallComponent.class).moveDown(); 
+            }
+            else fireball.removeFromWorld();
+        }
     }
 
     protected void createObstacles() {
         int[] startYObstacle = {50, 250, 640, 700};
         int[] startXObstacle = {50, 750, 120, 650};
         for (int i = 0; i < startXObstacle.length; i++) {
-            Texture meteorit = FXGL.texture("meteorit.png", 100, 100);
+            Texture meteorit = FXGL.texture("meteorit.png", 90, 90);
             FXGL.entityBuilder()
                     .viewWithBBox(meteorit)
                     .at(startXObstacle[i], startYObstacle[i])
@@ -102,20 +123,32 @@ public class App extends GameApplication {
                     .buildAndAttach();
         }
     }
+    @Override
+    protected void initGameVars(Map<String, Object> vars){ //Map ist ein Interface und ermöglicht die Speicherung von Schlüssel-Wert-Paaren. Schlüssel müssen eindeutig sein, Werte können sich wiederholen. //Die Zuweisung von Schlüssel-Wert-Paaren macht Code lesbarer, da man über einen logisch benannten Schlüssel auf Werte zugreifen kann. 
+        //Erzeugung einer integer Variablen mit dem Wert 3
+        vars.put("lives", 3); 
+        vars.put("speedOfPlayer", 5); //Hier könnte man z.B. eine Speed des Players festlegen, die während des Spiels angepasst wird
+        //
+        
+    }
 
     @Override
     protected void initPhysics() {
         //Die Syntax mit einem CollisionHandler
         FXGL.getPhysicsWorld().addCollisionHandler(new CollisionHandler(gameEntitys.PLAYER, gameEntitys.OBSTACLE) {
             @Override
-            protected void onCollisionBegin(Entity player, Entity obstacle) {
-                System.out.println("getroffen");
-                player.getComponent(JumperComponent.class).setCanMove(false);
+            protected void onCollision(Entity player, Entity obstacle) {
+                System.out.println("Kollision vorhanden");
+                MovingComponent comp = player.getComponent(MovingComponent.class);
+                player.setPosition(
+                        comp.getLastX(),
+                        comp.getLastY()
+                );
             }
 
             @Override
             protected void onCollisionEnd(Entity player, Entity obstacle) {
-                player.getComponent(JumperComponent.class).setCanMove(true);
+                System.out.println("Kollision beendet");
             }
         });
     }

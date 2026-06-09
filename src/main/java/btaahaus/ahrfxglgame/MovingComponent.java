@@ -12,43 +12,54 @@ import com.almasb.fxgl.entity.components.TransformComponent;
  *
  * @author Administrator
  */
-public class JumperComponent extends Component {
+public class MovingComponent extends Component {
 
     private TransformComponent entityPositions;
     private double speed;
-    private boolean canMove = true;
+    private double lastX;
+    private double lastY;
 
+    public MovingComponent(double speed) {
+        this.speed = speed; 
+    }
+    @Override
     public void onUpdate(double tpf) {
         speed = tpf * 90;
     }
 
     public void up() {
-        if (entity.getY() > 0 && canMove) {
+        lastX = entity.getX();
+        lastY = entity.getY();
+        if (entity.getY() > 0) {
             entity.translateY(-5 * speed);
         }
-        else entity.translateY(speed * 25);
     }
 
     public void down() {
-        if (entity.getY() < FXGL.getAppHeight()-entity.getHeight() && canMove) {
+        lastX = entity.getX();
+        lastY = entity.getY();
+        if (entity.getY() < FXGL.getAppHeight() - entity.getHeight()) {
             entity.translateY(5 * speed);
         }
-        else entity.translateY(speed * -25);
     }
 
     public void right() {
-        if (entity.getX() < FXGL.getAppWidth()&& canMove) {
+        lastX = entity.getX();
+        lastY = entity.getY();
+        if (entity.getX() < FXGL.getAppWidth()) {
             entity.translateX(speed * 5);
         }
-        else entity.translateX(speed * -25);
     }
+
     public void left() {
-        if (entity.getX() > 0 && canMove) {
+        lastX = entity.getX();
+        lastY = entity.getY();
+        if (entity.getX() > 0) {
             entity.translateX(speed * -5);
         }
-        else entity.translateX(speed * 25);
     }
- public double getSpeed() {
+
+    public double getSpeed() {
         return speed;
     }
 
@@ -56,14 +67,11 @@ public class JumperComponent extends Component {
         this.speed = speed;
     }
 
-    public boolean isCanMove() {
-        return canMove;
+    public double getLastY() {
+        return this.lastY;
     }
 
-    public void setCanMove(boolean canMove) {
-        this.canMove = canMove;
+    public double getLastX() {
+        return this.lastX;
     }
-
-
-
 }
