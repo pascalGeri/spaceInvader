@@ -72,14 +72,14 @@ public class App extends GameApplication {
     protected void initInput() {
         Input input = getInput();
         //Steurung der Bullet
-        input.addAction(new UserAction("shootPlayer"){
+        /*input.addAction(new UserAction("shootPlayer"){
            @Override
            protected void onAction(){
                FXGL.getGameWorld().spawn("Bullet", new SpawnData(
                player.getX(), player.getY(), )
                ); 
            }
-        }, KeyCode.SPACE);
+        }, KeyCode.SPACE);*/0
         
         
         //Steuerung des Players

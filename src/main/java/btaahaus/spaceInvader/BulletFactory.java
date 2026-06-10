@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package btaahaus.ahrfxglgame;
+package btaahaus.spaceInvader;
 
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.Entity;
@@ -20,7 +20,8 @@ public class BulletFactory  implements EntityFactory{
  
     @Spawns("Bullet")
     public Entity newBullet(SpawnData data){
-        Texture bullet = FXGL.texture("bullet.png", 5, 12); 
+        String bulletSrc = data.get("bulletSrc"); 
+        Texture bullet = FXGL.texture(bulletSrc, 5, 12); 
         return FXGL.entityBuilder()
                 .at(data.getX(), data.getY())
                 .viewWithBBox(bullet)

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package btaahaus.ahrfxglgame;
+package btaahaus.spaceInvader;
 
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.component.Component;
@@ -24,7 +24,7 @@ public class MovingComponent extends Component {
     }
     @Override
     public void onUpdate(double tpf) {
-        speed = tpf * 90;
+        speed = tpf * 90; //Speed ist nur ein Factor, der die Synchronisation mit der FPS regelt
     }
 
     public void up() {
@@ -35,12 +35,25 @@ public class MovingComponent extends Component {
         }
     }
 
+    
     public void down() {
         lastX = entity.getX();
         lastY = entity.getY();
         if (entity.getY() < FXGL.getAppHeight() - entity.getHeight()) {
             entity.translateY(5 * speed);
         }
+    }
+    public void fireBallDown() {
+        lastX = entity.getX();
+        lastY = entity.getY();
+        entity.translateY(5 * speed);
+       
+    }
+    public void bulletMove(int bulletSpeed) {
+        lastX = entity.getX();
+        lastY = entity.getY();
+        entity.translateY(-bulletSpeed * speed);
+       
     }
 
     public void right() {

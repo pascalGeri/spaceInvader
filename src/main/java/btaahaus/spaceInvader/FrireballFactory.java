@@ -1,4 +1,4 @@
-package btaahaus.ahrfxglgame;
+package btaahaus.spaceInvader;
 
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.Entity;
@@ -16,12 +16,6 @@ import com.almasb.fxgl.texture.Texture;
  * @author Administrator
  */
 
-
-
-
-
-
-
 public class FrireballFactory implements EntityFactory {
 
     int x = 0;
@@ -38,7 +32,6 @@ public class FrireballFactory implements EntityFactory {
                 .with(new MovingComponent(10*Math.random() +3))
                 .build();
     }
-
     protected double randomStartX() {
         return FXGL.getAppWidth() * Math.random();
     }
