@@ -59,27 +59,21 @@ public class App extends GameApplication {
         player = FXGL.getGameWorld().spawn("Player", new SpawnData(startX, startY)
                 .put("textureSrc", "rocketSchmal.png")
                 .put("speed", 10));
-        /*Texture rocket = FXGL.texture("rocketSchmal.png", 50, 100);
-        player = FXGL.entityBuilder() //Der Spieler wird erstellt
-                .at(screenX / 2 - rocket.getWidth() / 2, screenY / 2)
-                .viewWithBBox(rocket)
-                .type(gameEntitys.PLAYER)
-                .with(new MovingComponent(10), new CollidableComponent(true))
-                .buildAndAttach();*/
     }
 
     @Override
     protected void initInput() {
         Input input = getInput();
         //Steurung der Bullet
-        /*input.addAction(new UserAction("shootPlayer"){
+        input.addAction(new UserAction("shootPlayer"){
            @Override
            protected void onAction(){
-               FXGL.getGameWorld().spawn("Bullet", new SpawnData(
-               player.getX(), player.getY(), )
-               ); 
+               Entity bullet = FXGL.getGameWorld().spawn("Bullet", new SpawnData(
+               (player.getX() + player.getWidth()/7.5), player.getY() - player.getHeight()/1.5) 
+               .put("bulletSrc", "bullet.png")
+               .put("bulletSpeedFactor", 2.5)); 
            }
-        }, KeyCode.SPACE);*/0
+        }, KeyCode.SPACE);
         
         
         //Steuerung des Players
@@ -114,7 +108,8 @@ public class App extends GameApplication {
     protected void onUpdate(double tpf) {
         int lives = FXGL.getWorldProperties().getInt("lives"); 
         int leben = FXGL.getWorldProperties().getInt("speedOfPlayer");
-             
+        
+        List <Entity> listOfBullets = FXGL.getGameWorld().getEntitiesByType(gameEntitys.BULLET); 
         List<Entity> listOfFireballs = FXGL.getGameWorld().getEntitiesByType(gameEntitys.FIREBALL); 
         fireBalltimer++;
         if (fireBalltimer > tpf*2000) {
@@ -126,6 +121,9 @@ public class App extends GameApplication {
             fireball.getComponent(MovingComponent.class).fireBallDown(); 
             }
             else fireball.removeFromWorld();
+        }
+        for(Entity bullet : listOfBullets){
+            bullet.getComponent(MovingComponent.class).bulletMove(2); 
         }
     }
 

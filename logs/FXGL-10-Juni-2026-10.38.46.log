@@ -1,0 +1,862 @@
+10:35:04.072 [main                     ] DEBUG Logger               - Configured Logger
+10:35:04.078 [main                     ] DEBUG GameApplication      - Logging settings
+Title: Mein erstes Game mit FXGL
+Version: 0.0.1
+Width: 1280
+Height: 880
+Fullscreen: true
+Intro: false
+Profiling: false
+Single step:false
+App Mode: DEVELOPER
+Menu Key: ESCAPE
+Stage Style: DECORATED
+Scene Factory: class com.almasb.fxgl.app.scene.SceneFactory
+
+10:35:04.443 [JavaFX Application Thread] DEBUG FXGLApplication      - Initializing FXGL
+10:35:04.446 [JavaFX Application Thread] INFO  Engine               - FXGL-25 (05.02.2026 22.57) on WINDOWS (J:25.0.3 FX:25.0.1)
+10:35:04.446 [JavaFX Application Thread] DEBUG Engine               - JRE Vendor Name: Oracle Corporation
+10:35:04.446 [JavaFX Application Thread] DEBUG Engine               - Running on OS: Windows 11 version 10.0
+10:35:04.446 [JavaFX Application Thread] DEBUG Engine               - Architecture: amd64
+10:35:04.446 [JavaFX Application Thread] INFO  Engine               - Source code and latest versions at: https://github.com/AlmasB/FXGL
+10:35:04.446 [JavaFX Application Thread] INFO  Engine               -       Ask questions and discuss at: https://github.com/AlmasB/FXGL/discussions
+10:35:04.510 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Creating a JavaFX scene
+10:35:04.542 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Target settings size: 1280.0 x 880.0
+10:35:04.542 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled scene size:    1280.0 x 880.0
+10:35:04.542 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+10:35:04.543 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Set initial scene to FXGLStartupScene
+10:35:04.546 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Opening main window
+10:35:04.771 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Window border size: (16.0, 39.0)
+10:35:04.771 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled size: 1280.0 x 880.0
+10:35:04.771 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scaled ratio: (1.0, 1.0)
+10:35:04.771 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Scene size: 1280.0 x 880.0
+10:35:04.771 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Stage size: 1296.0 x 919.0
+10:35:04.777 [FXGL Background Thread 1 ] DEBUG Engine               - Initializing environment variables
+10:35:04.821 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - User app class for loading assets: class btaahaus.spaceInvader.App
+10:35:04.821 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Applying CSS: fxgl_dark.css
+10:35:04.822 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/css/fxgl_dark.css
+10:35:04.856 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Initializing application scenes
+10:35:04.886 [FXGL Background Thread 1 ] DEBUG GameWorld            - Game world initialized
+10:35:04.920 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Physics world initialized: appHeight=880, physics.ppm=50,0
+10:35:04.920 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Using strategy: BRUTE_FORCE
+10:35:04.923 [FXGL Background Thread 1 ] DEBUG GameScene            - Game scene initialized: 1280x880
+10:35:04.934 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createMenuBodyGameMenu()
+10:35:04.945 [FXGL Background Thread 1 ] DEBUG FXGL.DefaultMenu     - createOptionsMenu()
+10:35:04.953 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/textures/particles/smoke.png
+10:35:05.007 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/textures/particles/trace_horizontal.png
+10:35:05.025 [FXGL Background Thread 1 ] DEBUG GameApplicationServi - Application scenes initialized
+10:35:05.034 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Loading FXGL system data
+10:35:05.036 [FXGL Background Thread 1 ] DEBUG FileSystemAccess     - Reading from: C:\Users\Administrator\Dokumente\netBeansProjekt\spaceInvader\system\fxgl.bundle
+10:35:05.041 [FXGL Background Thread 1 ] DEBUG SystemBundleService  - Bundle FXGL: {}
+10:35:05.041 [FXGL Background Thread 1 ] DEBUG UpdaterService       - Checking for updates
+10:35:05.044 [FXGL Background Thread 4 ] DEBUG FXGLApplication      - Loading fonts
+10:35:05.045 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/fonts/VarelaRound-Regular.ttf
+10:35:05.045 [FXGL Background Thread 1 ] DEBUG FXGLApplication      - Loading default localization
+10:35:05.045 [FXGL Background Thread 1 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/languages/english.lang
+10:35:05.057 [FXGL Background Thread 1 ] INFO  FXGLApplication      - FXGL initialization took: 0,280 sec
+10:35:05.064 [JavaFX Application Thread] DEBUG Input                - Registered new binding: shootPlayer - Space
+10:35:05.064 [JavaFX Application Thread] DEBUG Input                - Registered new binding: right - D
+10:35:05.064 [JavaFX Application Thread] DEBUG Input                - Registered new binding: left - A
+10:35:05.064 [JavaFX Application Thread] DEBUG Input                - Registered new binding: up - W
+10:35:05.064 [JavaFX Application Thread] DEBUG Input                - Registered new binding: down - S
+10:35:05.065 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/textures/fxgl_icon.png
+10:35:05.067 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/fonts/Abel-Regular.ttf
+10:35:05.070 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/fonts/TerminalLandMono-Regular.otf
+10:35:05.074 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/ui/fonts/Courier-Prime.ttf
+10:35:05.078 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: jar:file:/C:/Users/Lehrer.BTA5112/.m2/repository/com/github/almasb/fxgl/25/fxgl-25.jar!/fxglassets/textures/fxgl_default_cursor.png
+10:35:05.080 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - CTRL+8
+10:35:05.081 [JavaFX Application Thread] DEBUG Input                - Registered new binding: System info dump - CTRL+9
+10:35:05.081 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Restart - CTRL+R
+10:35:05.082 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Toggle Debug Camera - CTRL+7
+10:35:05.084 [JavaFX Application Thread] DEBUG LoopRunner           - Starting loop
+10:35:05.084 [JavaFX Application Thread] DEBUG LoopRunner           - Initializing JavaFX AnimationTimerLoop
+10:35:05.087 [JavaFX Application Thread] DEBUG GameApplicationServi - Starting new game
+10:35:05.087 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+10:35:05.096 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLStartupScene and adding to FXGLLoadingScene
+10:35:05.096 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLStartupScene -> FXGLLoadingScene
+10:35:05.096 [JavaFX Application Thread] DEBUG GameApplicationServi - Clearing previous game
+10:35:05.096 [JavaFX Application Thread] DEBUG GameScene            - Clearing game scene
+10:35:05.096 [JavaFX Application Thread] DEBUG GameWorld            - Clearing game world
+10:35:05.096 [JavaFX Application Thread] DEBUG PhysicsWorld         - Clearing physics world
+10:35:05.098 [FXGL Background Thread 4 ] DEBUG FXGLApplication      - Initializing game
+10:35:05.098 [JavaFX Application Thread] DEBUG FXGLApplication      - Registering font factories with UI factory
+10:35:05.105 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/bgSpace.jpg
+10:35:05.178 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/meteorit.png
+10:35:05.201 [FXGL Background Thread 4 ] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/rocketSchmal.png
+10:35:05.211 [FXGL Background Thread 4 ] INFO  FXGLApplication      - Game initialization took: 0,113 sec
+10:35:05.217 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+10:35:05.225 [JavaFX Application Thread] DEBUG GameApplicationServi - Removing overlay from FXGLLoadingScene and adding to GameScene
+10:35:05.225 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - FXGLLoadingScene -> GameScene
+10:35:05.763 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:06.292 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:06.836 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:06.899 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/bullet.png
+10:35:07.380 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:07.924 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:08.045 [FXGL Background Thread 3 ] DEBUG Engine               - Logging environment variables
+10:35:08.045 [FXGL Background Thread 3 ] DEBUG Engine               - achievements: []
+10:35:08.045 [FXGL Background Thread 3 ] DEBUG Engine               - actualHeight: 880.0
+10:35:08.045 [FXGL Background Thread 3 ] DEBUG Engine               - actualHeightProperty: ReadOnlyDoubleProperty [value: 880.0]
+10:35:08.045 [FXGL Background Thread 3 ] DEBUG Engine               - actualWidth: 1280.0
+10:35:08.045 [FXGL Background Thread 3 ] DEBUG Engine               - actualWidthProperty: ReadOnlyDoubleProperty [value: 1280.0]
+10:35:08.045 [FXGL Background Thread 3 ] DEBUG Engine               - appIcon: fxgl_icon.png
+10:35:08.045 [FXGL Background Thread 3 ] DEBUG Engine               - applicationMode: DEVELOPER
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - cSSList: [fxgl_dark.css]
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - collisionDetectionStrategy: BRUTE_FORCE
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - configClass: Optional.empty
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - credits: []
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - defaultCursor: CursorInfo(imageName=fxgl_default_cursor.png, hotspotX=7.0, hotspotY=6.0)
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - devBBoxColorProperty: ObjectProperty [value: 0xff0000ff]
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - devEnableDebugCameraProperty: BooleanProperty [value: false]
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - devSensorColorProperty: ObjectProperty [value: 0xffff00ff]
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - devShowBBoxProperty: BooleanProperty [value: false]
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - devShowPositionProperty: BooleanProperty [value: false]
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - enabledMenuItems: []
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - engineServices: [class com.almasb.fxgl.app.services.FXGLAssetLoaderService, class com.almasb.fxgl.app.FXGLApplication$GameApplicationService, class com.almasb.fxgl.app.services.FXGLDialogService, class com.almasb.fxgl.app.services.IOTaskExecutorService, class com.almasb.fxgl.io.FileSystemService, class com.almasb.fxgl.localization.LocalizationService, class com.almasb.fxgl.app.services.SystemBundleService, class com.almasb.fxgl.profile.SaveLoadService, class com.almasb.fxgl.ui.FXGLUIFactoryServiceProvider, class com.almasb.fxgl.ui.FXGLDialogFactoryServiceProvider, class com.almasb.fxgl.audio.AudioPlayer, class com.almasb.fxgl.notification.impl.NotificationServiceProvider, class com.almasb.fxgl.achievement.AchievementService, class com.almasb.fxgl.cutscene.CutsceneService, class com.almasb.fxgl.minigames.MiniGameService, class com.almasb.fxgl.net.NetService, class com.almasb.fxgl.app.services.UpdaterService, class com.almasb.fxgl.dev.DevService]
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - fontGame: Abel-Regular.ttf
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - fontMono: TerminalLandMono-Regular.otf
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - fontSizeScaleUI: 1.0
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - fontText: Courier-Prime.ttf
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - fontUI: VarelaRound-Regular.ttf
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - fpsRefreshRate: 500.0 ms
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - fullScreen: BooleanProperty [value: false]
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - gameDifficulty: MEDIUM
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - gameDifficultyProperty: ObjectProperty [value: MEDIUM]
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - globalMusicVolume: 0.5
+10:35:08.046 [FXGL Background Thread 3 ] DEBUG Engine               - globalMusicVolumeProperty: DoubleProperty [value: 0.5]
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - globalSoundVolume: 0.5
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - globalSoundVolumeProperty: DoubleProperty [value: 0.5]
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - height: 880
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - is3D: false
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isAndroid: false
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isBrowser: false
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isClickFeedbackEnabled: false
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isCloseConfirmation: false
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isDesktop: true
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isDeveloperMenuEnabled: false
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isEmbedded: false
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isEntityPreloadEnabled: true
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isExperimentalTiledLargeMap: false
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isFileSystemWriteAllowed: true
+10:35:08.047 [FXGL Background Thread 3 ] DEBUG Engine               - isFullScreenAllowed: true
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isFullScreenFromStart: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isGameMenuEnabled: true
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isIOS: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isIntroEnabled: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isLinux: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isMac: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isMainMenuEnabled: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isManualResizeEnabled: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isMobile: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isNative: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isPauseMusicWhenMinimized: true
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isPreserveResizeRatio: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isProfilingEnabled: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isScaleAffectedOnResize: true
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isSingleStep: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isUserProfileEnabled: false
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - isWindows: true
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - language: ObjectProperty [value: ENGLISH]
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - menuKey: ESCAPE
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - mouseSensitivity: 0.2
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - notificationViewClass: class com.almasb.fxgl.notification.view.XboxNotificationView
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - pixelsPerMeter: 50.0
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - platform: WINDOWS
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - prefHeightProperty: ReadOnlyDoubleProperty [value: 880.0]
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - prefWidthProperty: ReadOnlyDoubleProperty [value: 1280.0]
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - profileDir: profiles/
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - profileName: StringProperty [value: DEFAULT]
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - randomSeed: -1
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - runtimeInfo: RuntimeInfo(platform=WINDOWS, version=25, build=05.02.2026 22.57)
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - saveFileExt: sav
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - scaledHeightProp$fxgl: DoubleProperty [bound, value: 880.0]
+10:35:08.048 [FXGL Background Thread 3 ] DEBUG Engine               - scaledWidthProp$fxgl: DoubleProperty [bound, value: 1280.0]
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - sceneFactory: com.almasb.fxgl.app.scene.SceneFactory@6464503f
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - secondsIn24h: 60
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuBack: menu/back.wav
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuPress: menu/press.wav
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - soundMenuSelect: menu/select.wav
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - soundNotification: core/notification.wav
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - stageStyle: DECORATED
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - supportedLanguages: [ENGLISH, FRENCH, GERMAN, HUNGARIAN, RUSSIAN]
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - ticksPerSecond: -1
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - title: Mein erstes Game mit FXGL
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - urlGithub: https://github.com/AlmasB/FXGL
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - urlLeaderboard: http://fxgl-top.herokuapp.com/
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - urlPOM: https://raw.githubusercontent.com/AlmasB/FXGL/release/README.md
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - userAppClass: class btaahaus.spaceInvader.App
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - version: 0.0.1
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - versionCheckDays: 7
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - width: 1280
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - Logging services
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.FXGLAssetLoaderService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.FXGLApplication$GameApplicationService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.FXGLDialogService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.IOTaskExecutorService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.io.FileSystemService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.localization.LocalizationService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.SystemBundleService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.profile.SaveLoadService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.ui.FXGLUIFactoryServiceProvider
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.ui.FXGLDialogFactoryServiceProvider
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.audio.AudioPlayer
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.notification.impl.NotificationServiceProvider
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.achievement.AchievementService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.cutscene.CutsceneService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.minigames.MiniGameService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.net.NetService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.app.services.UpdaterService
+10:35:08.049 [FXGL Background Thread 3 ] DEBUG Engine               - class com.almasb.fxgl.dev.DevService
+10:35:08.484 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:08.904 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:09.157 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:09.723 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:09.771 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:10.323 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:10.808 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:10.871 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:10.952 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:11.499 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:11.905 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:12.158 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:12.692 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:12.723 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:13.195 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:13.273 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:13.541 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:13.726 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:14.130 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:14.644 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:14.926 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:15.300 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:15.829 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:16.344 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:16.718 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:17.187 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:17.485 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:18.002 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:18.504 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:18.552 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:19.070 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:19.101 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:19.447 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:19.654 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:19.901 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:20.058 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:20.258 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:20.804 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:20.936 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:21.410 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:21.926 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:22.440 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:22.488 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:23.064 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:23.602 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:23.754 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:24.007 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:24.123 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:24.676 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:25.005 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:25.487 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:25.939 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:25.985 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:26.546 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:27.090 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:27.589 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:27.687 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:28.178 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:28.652 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:28.756 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:28.890 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:29.339 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:29.635 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:29.888 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:30.291 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:30.436 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:30.962 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:31.027 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:31.119 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:31.523 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:31.552 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:32.069 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:32.598 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:32.677 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:33.122 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:33.655 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:33.819 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:34.020 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:34.564 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:34.966 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:35.018 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:35.564 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:35.906 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:36.404 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:36.937 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:37.235 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:37.302 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:37.876 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:38.422 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:38.503 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:38.579 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:39.094 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:39.202 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:39.720 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:40.003 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:40.565 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:41.093 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:41.203 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:41.285 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:41.719 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:42.281 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:42.435 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:42.978 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:43.510 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:43.602 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:43.701 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:44.160 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:44.594 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:45.036 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:45.581 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:45.910 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:45.971 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:46.157 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:46.578 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:47.092 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:47.186 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:47.596 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:47.952 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:48.318 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:48.554 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:48.786 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:49.302 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:49.663 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:50.161 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:50.194 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:50.690 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:50.838 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:51.237 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:51.730 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:51.771 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:52.295 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:52.435 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:52.995 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:53.525 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:54.071 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:54.118 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:54.368 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:54.915 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:55.447 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:55.526 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:55.670 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:55.839 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:56.041 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:56.435 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:56.994 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:57.509 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:57.619 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:58.164 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:58.441 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:58.962 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:59.087 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:59.119 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:59.475 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:59.507 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:35:59.637 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:00.160 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:00.418 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:00.740 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:01.253 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:01.285 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:01.829 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:01.892 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:01.938 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:01.985 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:02.486 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:02.565 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:03.093 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:03.219 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:03.671 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:03.702 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:04.186 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:04.336 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:04.707 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:04.818 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:04.931 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:05.462 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:05.719 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:05.843 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:06.005 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:06.580 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:06.855 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:07.415 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:07.636 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:07.902 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:08.339 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:08.874 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:08.984 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:09.522 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:09.737 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:09.986 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:10.522 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:10.979 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:11.527 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:11.920 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:11.952 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:12.485 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:12.724 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:13.298 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:13.518 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:13.875 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:14.069 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:14.219 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:14.746 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:15.042 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:15.437 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:15.637 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:16.179 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:16.304 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:16.569 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:17.130 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:17.426 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:17.535 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:17.988 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:18.018 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:18.564 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:19.093 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:19.607 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:20.180 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:20.601 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:20.803 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:20.834 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:21.366 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:21.892 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:22.422 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:22.469 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:22.718 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:22.811 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:23.106 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:23.637 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:24.198 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:24.355 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:24.434 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:24.853 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:25.055 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:25.101 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:25.602 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:26.148 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:26.553 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:27.053 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:27.289 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:27.506 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:27.584 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:28.007 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:28.254 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:28.318 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:28.504 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:28.697 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:28.776 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:29.164 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:29.384 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:29.573 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:29.619 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:30.135 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:30.681 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:31.212 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:31.554 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:31.602 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:32.069 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:32.320 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:32.642 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:32.784 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:33.237 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:33.763 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:33.935 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:34.387 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:34.855 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:35.106 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:35.604 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:36.040 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:36.306 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:36.823 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:37.041 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:37.107 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:37.151 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:37.682 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:38.119 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:38.321 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:38.774 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:39.023 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:39.085 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:39.242 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:39.538 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:39.602 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:40.119 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:40.290 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:40.353 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:40.603 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:40.636 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:41.198 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:41.401 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:41.636 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:42.197 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:42.742 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:42.802 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:43.319 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:43.482 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:44.039 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:44.553 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:44.770 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:44.988 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:45.036 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:45.520 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:45.970 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:46.001 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:46.530 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:47.045 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:47.577 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:47.951 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:48.354 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:48.837 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:49.403 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:49.942 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:50.474 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:50.690 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:51.204 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:51.673 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:52.228 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:52.435 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:52.947 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:53.385 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:53.944 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:54.303 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:54.352 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:54.818 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:55.318 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:55.430 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:55.958 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:56.509 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:56.802 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:57.363 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:57.588 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:58.112 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:58.629 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:58.754 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:59.269 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:36:59.719 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:00.264 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:00.594 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:01.125 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:01.202 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:01.730 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:02.156 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:02.693 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:02.802 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:02.835 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:03.051 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:03.410 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:03.962 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:04.103 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:04.388 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:04.604 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:04.685 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:05.091 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:05.121 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:05.653 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:06.214 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:06.386 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:06.702 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:07.156 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:07.781 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:08.328 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:08.675 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:08.737 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:08.789 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:09.330 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:09.892 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:09.986 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:10.537 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:11.072 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:11.604 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:12.136 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:12.670 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:13.219 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:13.730 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:14.276 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:14.471 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:14.885 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:15.192 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:15.703 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:16.070 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:16.136 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:16.687 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:16.734 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:16.968 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:17.204 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:17.738 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:17.989 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:18.522 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:18.738 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:18.770 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:18.801 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:19.331 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:19.586 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:19.971 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:20.001 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:20.546 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:21.060 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:21.573 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:22.103 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:22.603 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:22.634 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:23.177 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:23.459 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:23.990 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:24.069 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:24.550 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:25.078 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:25.202 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:25.778 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:26.024 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:26.386 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:26.418 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:26.963 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:26.994 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:27.134 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:27.506 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:27.786 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:27.835 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:28.379 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:28.818 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:29.336 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:29.587 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:30.145 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:30.658 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:30.705 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:30.783 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:31.156 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:31.284 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:31.828 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:32.378 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:32.804 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:33.330 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:33.861 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:34.373 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:34.888 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:35.075 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:35.574 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:36.105 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:36.338 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:36.401 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:36.684 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:36.951 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:37.497 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:37.654 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:38.214 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:38.759 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:39.290 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:39.385 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:39.603 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:40.120 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:40.639 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:40.687 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:41.157 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:41.707 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:42.069 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:42.387 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:42.418 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:42.952 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:43.478 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:43.585 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:44.086 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:44.619 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:44.770 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:45.298 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:45.814 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:46.001 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:46.269 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:46.310 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:46.404 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:46.452 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:46.978 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:47.134 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:47.554 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:48.053 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:48.597 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:49.111 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:49.643 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:49.951 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:50.419 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:50.946 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:51.320 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:51.588 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:51.618 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:52.163 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:52.706 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:53.237 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:53.456 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:53.942 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:54.452 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:54.996 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:55.525 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:55.574 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:55.635 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:56.119 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:56.402 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:56.770 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:57.208 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:57.239 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:57.753 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:58.019 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:58.564 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:59.079 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:59.594 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:37:59.890 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:00.403 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:00.451 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:00.997 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:01.252 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:01.814 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:01.986 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:02.547 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:03.011 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:03.525 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:03.603 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:04.102 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:04.645 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:04.802 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:05.331 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:05.845 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:06.269 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:06.501 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:06.674 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:07.210 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:07.506 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:07.539 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:07.590 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:08.117 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:08.680 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:09.211 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:09.458 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:09.987 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:10.520 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:10.803 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:11.259 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:11.319 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:11.585 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:12.130 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:12.679 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:13.196 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:13.523 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:14.085 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:14.538 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:14.962 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:15.088 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:15.436 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:15.991 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:16.505 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:16.568 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:16.738 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:16.770 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:16.818 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:17.019 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:17.564 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:17.892 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:18.085 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:18.623 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:18.654 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:18.684 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:19.027 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:19.119 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:19.336 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:19.669 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:20.215 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:20.370 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:20.401 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:20.927 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:21.334 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:21.536 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:21.569 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:22.115 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:22.301 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:22.723 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:23.235 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:23.780 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:24.328 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:24.846 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:25.360 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:25.890 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:25.954 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:26.001 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:26.370 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:26.435 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:26.497 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:26.978 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:27.134 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:27.603 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:28.085 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:28.152 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:28.305 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:28.368 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:28.693 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:29.121 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:29.420 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:29.758 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:29.806 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:30.364 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:30.771 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:30.927 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:31.439 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:31.906 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:32.001 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:32.530 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:32.562 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:33.123 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:33.256 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:33.295 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:33.808 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:33.935 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:34.170 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:34.234 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:34.314 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:34.455 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:35.015 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:35.154 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:35.731 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:36.280 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:36.451 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:36.981 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:37.435 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:37.979 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:38.339 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:38.869 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:39.385 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:39.619 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:39.688 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:40.228 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:40.309 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:40.369 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:40.775 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:41.286 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:41.344 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:41.490 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:42.066 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:42.520 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:42.737 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:43.236 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:43.749 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:43.922 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:44.034 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:44.581 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:44.628 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:45.160 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:45.458 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:45.603 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:45.955 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:46.500 [JavaFX Application Thread] DEBUG FXGLAssetLoaderServi - Loading from file system: file:/C:/Users/Administrator/Dokumente/netBeansProjekt/spaceInvader/target/classes/assets/textures/fireBallSenkrecht.png
+10:38:46.896 [JavaFX Application Thread] DEBUG FXGLApplication      - Exiting FXGL
+10:38:46.896 [JavaFX Application Thread] DEBUG LoopRunner           - Stopping loop
+10:38:46.897 [JavaFX Application Thread] DEBUG SystemBundleService  - Saving FXGL system data
+10:38:46.898 [JavaFX Application Thread] DEBUG FileSystemAccess     - Writing to: C:\Users\Administrator\Dokumente\netBeansProjekt\spaceInvader\system\fxgl.bundle
+10:38:46.900 [JavaFX Application Thread] DEBUG Async                - Shutting down background threads
+10:38:46.900 [JavaFX Application Thread] DEBUG PrimaryStageWindow   - Closing main window
+10:38:46.906 [JavaFX Application Thread] DEBUG Logger               - Closing Logger

@@ -20,8 +20,9 @@ public class MovingComponent extends Component {
     private double lastY;
 
     public MovingComponent(double speed) {
-        this.speed = speed; 
+        this.speed = speed;
     }
+
     @Override
     public void onUpdate(double tpf) {
         speed = tpf * 90; //Speed ist nur ein Factor, der die Synchronisation mit der FPS regelt
@@ -35,7 +36,6 @@ public class MovingComponent extends Component {
         }
     }
 
-    
     public void down() {
         lastX = entity.getX();
         lastY = entity.getY();
@@ -43,17 +43,21 @@ public class MovingComponent extends Component {
             entity.translateY(5 * speed);
         }
     }
+
     public void fireBallDown() {
         lastX = entity.getX();
         lastY = entity.getY();
         entity.translateY(5 * speed);
-       
+
     }
+
     public void bulletMove(int bulletSpeed) {
         lastX = entity.getX();
         lastY = entity.getY();
-        entity.translateY(-bulletSpeed * speed);
-       
+        if (lastY > - entity.getHeight()) {
+            entity.translateY(-bulletSpeed * speed);
+        }else entity.removeFromWorld();
+
     }
 
     public void right() {

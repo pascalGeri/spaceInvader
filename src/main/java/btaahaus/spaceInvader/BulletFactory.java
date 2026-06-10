@@ -21,12 +21,13 @@ public class BulletFactory  implements EntityFactory{
     @Spawns("Bullet")
     public Entity newBullet(SpawnData data){
         String bulletSrc = data.get("bulletSrc"); 
-        Texture bullet = FXGL.texture(bulletSrc, 5, 12); 
+        Texture bullet = FXGL.texture(bulletSrc, 40, 100);
+        double bulletSpeedFactor = data.get("bulletSpeedFactor"); 
         return FXGL.entityBuilder()
                 .at(data.getX(), data.getY())
                 .viewWithBBox(bullet)
                 .type(gameEntitys.BULLET)
-                .with(new MovingComponent(15), new CollidableComponent(true))
+                .with(new MovingComponent(bulletSpeedFactor), new CollidableComponent(true))
                 .build(); 
     }
     
