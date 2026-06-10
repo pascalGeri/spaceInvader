@@ -17,7 +17,8 @@ import com.almasb.fxgl.texture.Texture;
  * @author Administrator
  */
 public class PlayerFactory implements EntityFactory{
-    
+    private static final long shootDelay = 1000/3; 
+    private long lastShoot = 0; 
     @Spawns("Player")
     
     public Entity newPlayer(SpawnData data){
@@ -35,8 +36,15 @@ public class PlayerFactory implements EntityFactory{
                 .viewWithBBox(rocket)
                 .with(new MovingComponent(speed), new CollidableComponent(true))
                 .type(gameEntitys.PLAYER)
-                .build(); 
-                
+                .build();            
+    }
+    public void shoot(){
+        long now = System.currentTimeMillis(); //die aktuelle Zeit in Millisekunden
+        
+        if(now - lastShoot < shootDelay) return
+        
+        
+        
     }
     
     
