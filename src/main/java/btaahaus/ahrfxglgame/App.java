@@ -20,8 +20,9 @@ import javafx.stage.Screen;
  * JavaFX App
  */
 public class App extends GameApplication {
-    int screenX; 
-    int screenY; 
+
+    int screenX;
+    int screenY;
     Entity player;
     int fireBalltimer = 0;
 
@@ -37,6 +38,9 @@ public class App extends GameApplication {
 
     @Override
     protected void initGame() {
+        System.out.println(
+                getClass().getResource("/assets/textures/rocket.png")
+        );
         screenX = FXGL.getAppWidth();
         screenY = FXGL.getAppHeight();
         FactoryController factoryController = new FactoryController();
@@ -93,20 +97,21 @@ public class App extends GameApplication {
 
     @Override
     protected void onUpdate(double tpf) {
-        int lives = FXGL.getWorldProperties().getInt("lives"); 
+        int lives = FXGL.getWorldProperties().getInt("lives");
         int leben = FXGL.getWorldProperties().getInt("speedOfPlayer");
-             
-        List<Entity> listOfFireballs = FXGL.getGameWorld().getEntitiesByType(gameEntitys.FIREBALL); 
+
+        List<Entity> listOfFireballs = FXGL.getGameWorld().getEntitiesByType(gameEntitys.FIREBALL);
         fireBalltimer++;
-        if (fireBalltimer > tpf*2000) {
+        if (fireBalltimer > tpf * 2000) {
             FXGL.getGameWorld().spawn("fireBall");
             fireBalltimer = 0;
         }
-        for(Entity fireball : listOfFireballs){
-            if(fireball.getY() < screenY){
-            fireball.getComponent(FireBallComponent.class).moveDown(); 
+        for (Entity fireball : listOfFireballs) {
+            if (fireball.getY() < screenY) {
+                fireball.getComponent(FireBallComponent.class).moveDown();
+            } else {
+                fireball.removeFromWorld();
             }
-            else fireball.removeFromWorld();
         }
     }
 
@@ -123,13 +128,14 @@ public class App extends GameApplication {
                     .buildAndAttach();
         }
     }
+
     @Override
-    protected void initGameVars(Map<String, Object> vars){ //Map ist ein Interface und ermöglicht die Speicherung von Schlüssel-Wert-Paaren. Schlüssel müssen eindeutig sein, Werte können sich wiederholen. //Die Zuweisung von Schlüssel-Wert-Paaren macht Code lesbarer, da man über einen logisch benannten Schlüssel auf Werte zugreifen kann. 
+    protected void initGameVars(Map<String, Object> vars) { //Map ist ein Interface und ermöglicht die Speicherung von Schlüssel-Wert-Paaren. Schlüssel müssen eindeutig sein, Werte können sich wiederholen. //Die Zuweisung von Schlüssel-Wert-Paaren macht Code lesbarer, da man über einen logisch benannten Schlüssel auf Werte zugreifen kann. 
         //Erzeugung einer integer Variablen mit dem Wert 3
-        vars.put("lives", 3); 
+        vars.put("lives", 3);
         vars.put("speedOfPlayer", 5); //Hier könnte man z.B. eine Speed des Players festlegen, die während des Spiels angepasst wird
         //
-        
+
     }
 
     @Override
